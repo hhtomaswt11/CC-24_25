@@ -1,0 +1,194 @@
+[
+    {
+        "type": "ping -c 7 10.0.4.10",
+        "frequency": 2,
+        "duration": 3,
+        "devices": ["n1", "n4"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": true,
+                "ram_usage": true,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": false,
+                "server": "n4",
+                "duration": 10,
+                "server_address": "0.0.0.0",
+                "bandwidth": false,
+                "packet_loss": true,
+                "jitter": false,
+                "latency": true,
+                "packet_count": 5
+            },
+            "AlertFlowConditions": {
+                "alertflow": true,
+                "cpu_usage": 50,
+                "ram_usage": 40,
+                "interface_stats": 1000,
+                "packet_loss": 3,
+                "jitter": 70
+            }
+        }
+    },
+    {
+        "type": "traceroute 10.0.5.10",
+        "frequency": 1,
+        "duration": 3,
+        "devices": ["n2", "n4"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": false,
+                "ram_usage": true,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": false,
+                "server": "n4",
+                "duration": 15,
+                "server_address": "0.0.0.0",
+                "bandwidth": false,
+                "packet_loss": true,
+                "jitter": false,
+                "latency": true,
+                "packet_count": 3
+            },
+            "AlertFlowConditions": {
+                "alertflow": false,
+                "cpu_usage": 40,
+                "ram_usage": 30,
+                "interface_stats": 1000,
+                "packet_loss": 2,
+                "jitter": 50
+            }
+        }
+    },
+    {
+        "type": "ping -c 3 10.0.6.10",
+        "frequency": 5,
+        "duration": 5,
+        "devices": ["n3", "n2", "n4"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": true,
+                "ram_usage": false,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": true,
+                "server": "n1",
+                "duration": 30,
+                "server_address": "0.0.0.0",
+                "bandwidth": false,
+                "packet_loss": true,
+                "jitter": true,
+                "latency": false,
+                "packet_count": 5
+            },
+            "AlertFlowConditions": {
+                "alertflow": false,
+                "cpu_usage": 1,
+                "ram_usage": 1,
+                "interface_stats": 2000,
+                "packet_loss": 5,
+                "jitter": 100
+            }
+        }
+    },
+    {
+        "type": "traceroute 10.0.4.10",
+        "frequency": 1,
+        "duration": 10,
+        "devices": ["n1", "n3"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": true,
+                "ram_usage": true,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": true,
+                "server": "n3",
+                "duration": 20,
+                "server_address": "0.0.0.0",
+                "bandwidth": true,
+                "packet_loss": true,
+                "jitter": true,
+                "latency": true,
+                "packet_count": 15
+            },
+            "AlertFlowConditions": {
+                "alertflow": true,
+                "cpu_usage": 70,
+                "ram_usage": 65,
+                "interface_stats": 1500,
+                "packet_loss": 10,
+                "jitter": 150
+            }
+        }
+    },
+    {
+        "type": "ping -c 10 10.0.7.10",
+        "frequency": 3,
+        "duration": 6,
+        "devices": ["n2", "n4"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": false,
+                "ram_usage": true,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": false,
+                "server": "n2",
+                "duration": 15,
+                "server_address": "0.0.0.0",
+                "bandwidth": false,
+                "packet_loss": false,
+                "jitter": true,
+                "latency": true,
+                "packet_count": 20
+            },
+            "AlertFlowConditions": {
+                "alertflow": true,
+                "cpu_usage": 55,
+                "ram_usage": 40,
+                "interface_stats": 1200,
+                "packet_loss": 5,
+                "jitter": 80
+            }
+        }
+    },
+    {
+        "type": "traceroute 10.0.5.10",
+        "frequency": 2,
+        "duration": 8,
+        "devices": ["n4", "n1", "n2"],
+        "Devices": {
+            "devices_metric": {
+                "cpu_usage": true,
+                "ram_usage": false,
+                "interface_stats": ["eth0"]
+            },
+            "link_metrics": {
+                "use_iperf": true,
+                "server": "n1",
+                "duration": 25,
+                "server_address": "0.0.0.0",
+                "bandwidth": true,
+                "packet_loss": true,
+                "jitter": true,
+                "latency": true,
+                "packet_count": 12
+            },
+            "AlertFlowConditions": {
+                "alertflow": true,
+                "cpu_usage": 65,
+                "ram_usage": 50,
+                "interface_stats": 1700,
+                "packet_loss": 7,
+                "jitter": 120
+            }
+        }
+    }
+]
