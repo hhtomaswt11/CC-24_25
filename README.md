@@ -4,7 +4,7 @@
 
 #### Média dos Trabalhos Práticos: 16.5/20.0  ★
 
-Estes dois trabalhos foram desenvolvidos por Tomás Melo (A104529), José Vasconcelos (A100763) e João Serrão (A104444), durante o 1º semestre do 3º ano da licenciatura em Engenharia Informática. 
+Estes dois trabalhos foram desenvolvidos por [Tomás Melo (A104529)](https://github.com/hhtomaswt11), [José Vasconcelos (A100763)](https://github.com/josevasconcelos2002) e [João Serrão (A104444)](https://github.com/Joao-Serrao), durante o 1º semestre do 3º ano da licenciatura em Engenharia Informática. 
 
 ## Trabalho Prático Nº1 – Protocolos da Camada de Transporte
 ### Avaliação: 18.1/20.0 ★
